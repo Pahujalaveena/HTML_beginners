@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myDiv{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes example
+        {
+            0%{ background-color: bisque; top:0px ;left: 0px;}
+            25%{background-color: aquamarine; top:0px ; left:200px;}
+            50%{background-color: blueviolet; top:200px ; left: 200px;}
+            75%{background-color: cadetblue; left: 0px; top: 200px;}
+            100%{background-color: rgb(9, 84, 222);}
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+
+<div class="myDiv"></div>
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- 
+Types of animation
+1. Animation Delay
+2. Animation Direction
+3. Animation Duration
+4. Animation Fill Mode
+5. Animation Name
+6. Animation Iteration Count
+7. Animation Timing Function -->
