@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+        }
+        #box{
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media screen and  (max-width: 480px){
+            .three{
+                background-color: blueviolet;
+                color: wheat;
+                text-align: center;
+            }
+            .one ,.two{
+                display: none;
+            }
+            
+        }
+
+        
+        @media screen and  (max-width: 880px) and (min-width:481px){
+            .two{
+                background-color: blueviolet;
+                color: wheat;
+                text-align: center;
+            }
+            .one ,.three{
+                display: none;
+            }
+        }
+
+        
+        @media screen and  (min-width: 881px){
+            .three{
+                background-color: blueviolet;
+                color: wheat;
+                text-align: center;
+            }
+            .two ,.three{
+                display: none;
+            }
+            #navbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box" class="one">I am desktop screen</div>
+        <div id="box" class="two">I am I-pad screen</div>
+        <div id="box" class="three">I am mobile screen</div>
+    </div>
+    <div class="navbar">
+        <div>Home</div>
+        <div>Contact Us</div>
+        <div>Login</div>
+    </div>
+</body>
+</html>
